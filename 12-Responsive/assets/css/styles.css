@@ -1,0 +1,29 @@
+h1{
+    color: lightsalmon;
+}
+
+p{
+    color: lightseagreen;
+}
+
+@media all and (orientation: landscape) and (min-width: 700px) and (max-width: 1000px){
+    body{
+        background-color: bisque;
+    }
+    h1{
+        color: yellowgreen;
+    }
+}
+
+@media all and (orientation: portrait) and (min-width: 500px) and (max-width: 600px){
+    body{
+        background-color: lightgrey;
+    }
+    h1{
+        color: crimson;
+    }
+}
+
+@media (max-width: 1010px) {
+
+}

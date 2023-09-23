@@ -1,0 +1,21 @@
+/*https://codepen.io/enxaneta/pen/adLPwv*/
+
+div{
+    border: 1px solid green;
+}
+
+.flex{
+    background-color: greenyellow;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.contenido-1, .contenido-2, .contenido-3 {
+    background-color: aquamarine;
+    height: 80px;
+    width: 80px;
+}

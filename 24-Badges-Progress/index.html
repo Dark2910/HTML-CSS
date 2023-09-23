@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badges and Progress</title>
+    <link rel="stylesheet" href="assets/bootstrap-5.3.1-dist/css/bootstrap.min.css">
+</head>
+
+<body>
+
+
+    <div class="container">
+        <h1> Ejemplo de un <span class="badge bg-dark">Badget</span></h1>
+
+        <button class="btn btn-warning">Notificarion <span class="badge bg-primary">4</span></button>
+
+        <button class="btn btn-success position-relative">Inbox
+            <span class="badge bg-dark rounded-pill position-absolute top-0	start-100 translate-middle">99+</span>
+        </button>
+
+    </div>
+
+    <div class="container my-3">
+        <button class="btn btn-success position-relative">Profile
+            <span
+                class="badge bg-dark position-absolute top-0 start-100 translate-middle p-2 border border-light rounded-circle">
+                <span class="visually-hidden">New alerts</span>
+            </span>
+        </button>
+    </div>
+
+    <div class="container my-3">
+        <div class="progress">
+            <div class="progress-bar bg-danger" style="width: 75%">75%</div>
+        </div>
+    </div>
+
+    <div class="container my-3">
+        <div class="progress-stacked">
+            <div class="progress" aria-label="Segment one" style="width: 15%">
+                <div class="progress-bar progress-bar-striped">15%</div>
+            </div>
+            <div class="progress" aria-label="Segment two" style="width: 30%">
+                <div class="progress-bar bg-success progress-bar-striped progress-bar-animated">30%</div>
+            </div>
+            <div class="progress" aria-label="Segment three" style="width: 20%">
+                <div class="progress-bar bg-info">20%</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+.input{
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    width: 100vw;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid lightsalmon;
+}
+.input[type="password"]{
+    color: lightseagreen;
+}
+
+.new-input{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid grey;
+    padding: 5px 10px;
+    color: crimson;
+/* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 0px 2px 4px 1px grey;
+}
+.new-input::placeholder{
+    color: grey;
+}
+.new-input:focus{
+    color: lightsalmon;
+    border-bottom: 1px solid lightsalmon;
+/* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 0px 2px 4px 1px lightsalmon;
+}
+
+.search{
+    border-radius: 10px;
+    padding: 5px 30px;
+    background-image: url('../img/search-icon.jpg');
+    background-repeat: no-repeat;
+    background-position: -100px;
+    color: white;
+}
+
+.description{
+    resize: horizontal;
+    height: 50px;
+}
+
+#select{
+    width: 250px;
+    height: 25px;
+    background-color: lemonchiffon;
+}

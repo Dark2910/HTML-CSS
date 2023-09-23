@@ -1,0 +1,18 @@
+.container{
+    width: 100vw; 
+    height: 100vh; 
+    background-color: lightseagreen;
+}
+
+.bi-fire{
+    color: orange;
+}
+
+.bi-box-seam{
+    font-size: xx-large;
+    color: #e29578;
+}
+
+.bi-alt{
+    color: rgb(0, 0, 0);
+}

@@ -1,0 +1,16 @@
+:root{
+    --color-principal: rgb(212, 20, 154);
+    --color-background: rgba(187, 187, 65,1);
+    --ancho: 50vw;
+    --alto: 25vh
+}
+
+.titulo, .footer{
+    color: var(--color-principal);
+}
+
+.container{
+    background-color: var(--color-background);
+    height: var(--alto);
+    width: var(--ancho);
+}

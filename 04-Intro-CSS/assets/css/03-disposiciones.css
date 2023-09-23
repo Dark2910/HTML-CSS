@@ -1,0 +1,16 @@
+.div-1, .div-2{
+    /*POR DEFECTO div tiene display: block;*/
+    background-color: aquamarine;
+
+}
+
+.span-1, .span-2{
+    /*POR DEFECTO span tiene display: inline;*/
+    background-color: yellowgreen;
+}
+
+.img {
+    /*POR DEFECTO img tiene display: inlie-block;*/
+    width: 200px;
+    height: 100px;
+}

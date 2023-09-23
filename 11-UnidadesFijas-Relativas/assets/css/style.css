@@ -1,0 +1,45 @@
+body{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    border: 1px solid #000000;
+    margin: 10px;
+    padding: 5px;
+}
+
+.container-1{
+    width: 100%;
+}
+.container-2{
+    width: 50%;
+}
+
+.px{
+    background-color: aquamarine;
+    width: 250px;
+}
+.porcentaje{
+    background-color: bisque;
+    width: 75%;
+}
+.view{
+    background-color: cadetblue;
+    width: 75vw;
+}
+
+.container-3{
+    font-size: 32px;
+}
+.container-4{
+    font-size: 16px;
+}
+
+.em{
+    font-size: 3em;
+}
+.rem{
+    font-size: 3rem;
+}

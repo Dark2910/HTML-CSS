@@ -1,0 +1,32 @@
+/*La especificida hace referencia a la jerarquia entre etiquetas, clases e ids, 
+cabe la posibilidad de unir estas tres y obtener una jerarquia mayo.
+Existen tambien otras dos jerarquias con mayor peso, la primera es
+aplicando el estilio directamente desde el documento HTML utilizando el atributo style y
+la segunda manera es utilizando la palaba !important en el css. Debo mencionar que 
+si se utiliza esta palabra se sigue respetando la jerarquia que existe entre etiquetas, clases e ids, */
+/* (1, 1, 1) */
+/* (1, 0, 0) */
+/* (0, 1, 0) */
+/* (0, 0, 1) */
+
+h1#h1-id\ another-id.h1-class{
+    color: lime;
+}
+
+#h1-id{
+    color: lightpink;
+}
+
+.h1-class{
+    color: lightseagreen !important;
+}
+
+h1{
+    color: orange !important; 
+}
+
+p{
+    color: lightslategrey;
+    text-align: justify;
+}
+

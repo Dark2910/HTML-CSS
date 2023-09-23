@@ -1,0 +1,67 @@
+.container {
+  width: 7rem;
+  background-color: bisque;
+}
+.container ul {
+  padding: 1rem;
+}
+.container ul li {
+  padding: 0.25rem 1rem;
+  list-style: none;
+}
+
+body {
+  text-decoration: none;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.caja-1 {
+  width: 100vw;
+  background-color: #D0D6B3;
+  border: 1px solid #AAAE7F;
+  padding: 0.5rem;
+  margin: 0.75rem 0;
+}
+.caja-1 h1 {
+  color: gray;
+  text-transform: uppercase;
+}
+.caja-1 p {
+  text-align: justify;
+}
+
+.caja-2 {
+  width: 100vw;
+  background-color: #C3B299;
+  border: 1px solid #523249;
+  padding: 0.5rem;
+  margin: 0.75rem 0;
+  text-align: center;
+}
+.caja-2 h2 {
+  text-transform: uppercase;
+}
+.caja-2 button {
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  background-color: #847979;
+  color: white;
+}
+.caja-2:hover {
+  width: 100vw;
+  background-color: #BBC2E2;
+  border: 1px solid #847979;
+  padding: 0.5rem;
+  margin: 0.75rem 0;
+  color: white;
+}
+.caja-2:hover button {
+  background-color: #CFCCD6;
+}
+.caja-2:hover button:hover {
+  background-color: #AAAE7F;
+}
+
+/*# sourceMappingURL=styles.css.map */

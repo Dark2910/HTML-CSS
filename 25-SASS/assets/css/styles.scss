@@ -1,0 +1,61 @@
+@use 'exportList';
+
+$h1Color: gray;
+$btnColorText: white;
+
+body {
+    text-decoration: none;
+    padding: 0;
+    margin: 0 auto;
+}
+
+@mixin mixin($background:#D0D6B3, $borderColor:#AAAE7F){
+    width: 100vw;
+    background-color: $background;
+    border: 1px solid $borderColor;
+    padding: 0.5rem;
+    margin: 0.75rem 0;
+}
+
+.caja-1{
+    @include mixin();
+
+    h1{
+        color: $h1Color;
+        text-transform: uppercase;
+    }
+
+    p{
+        text-align: justify;
+    }
+}
+.caja-2{
+    @include mixin(#C3B299, #523249);
+    
+    text-align: center;
+
+    h2{
+        text-transform: uppercase;
+    }
+
+    button{
+        border: none;
+        padding: 0.5rem;
+        border-radius: 0.25rem;
+        background-color: #847979;
+        color: $btnColorText;
+    }
+
+    &:hover{
+        @include mixin(#BBC2E2, #847979);
+
+        color: white;
+
+        button{
+            background-color: #CFCCD6;
+            &:hover{
+                background-color: #AAAE7F;
+            }
+        }
+    }
+}

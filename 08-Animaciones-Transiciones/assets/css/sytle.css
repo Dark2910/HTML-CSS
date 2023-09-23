@@ -1,0 +1,78 @@
+*{
+    text-decoration: none;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+.padre{
+    background-color: aquamarine;
+    height: 500px;
+    width: 500px;
+}
+
+.hijo{
+    background-color: bisque;
+    height: 50%;
+    width: 50%;
+
+/* transition: propiedad duración función-de-tiempo retardo;
+Por defecto transicion tiene la propiedad 'all', pero 
+esta puede ser reemplazada por cualquier otra
+*/
+/*     transition: 
+        transform 1s ease-in-out 0.25s, 
+        background-color 1.5s linear; */
+}   
+
+@keyframes translation{
+    0% {
+        transform: translate(0%, 0%) rotate(0deg);
+    }
+    25% {
+        transform: translate(100%, 0%) rotate(90deg);
+    }
+    50% {
+        transform: translate(100%, 100%) rotate(180deg);
+    }
+    75% {
+        transform: translate(0%, 100%) rotate(270deg);
+    }
+    100% {
+        transform: translate(0%, 0%) rotate(360deg);
+        background-color: darkkhaki;
+    }
+}
+
+.padre:hover .hijo{
+/*     transform: translate(100%); */
+/*     background-color: cadetblue; */
+
+/* animation: nombre duración función-de-tiempo retardo iteración dirección relleno;
+'nombre': El nombre de la animación que definiste usando @keyframes.
+'duración': El tiempo que llevará completar una iteración de la animación, en segundos o milisegundos.
+'función-de-tiempo': La función que controla cómo cambia la animación con el tiempo (ejemplos: linear, ease, ease-in-out, etc.).
+'retardo': El tiempo que se espera antes de que comience la animación, en segundos o milisegundos.
+'iteración': La cantidad de veces que se repetirá la animación (valores posibles: número, infinite).
+'dirección': La dirección de la animación (normal, reverse, alternate, alternate-reverse).
+'relleno': Controla cómo se representará el estado inicial y final de la animación (none, forwards, backwards, both).
+*/
+    animation: 
+        translation 2s ease-in-out 0.25s infinite alternate-reverse forwards;
+}
+
+.padre2{
+    background-color: lightcoral;
+    height: 500px;
+    width: 500px;
+}
+
+.hijo2{
+    background-color: lightslategrey;
+    height: 50%;
+    width: 50%;
+    animation: 
+        translation 2s ease-in-out 0.25s infinite alternate-reverse forwards;
+}
+.padre2:hover .hijo2{
+    animation-play-state: paused;
+}

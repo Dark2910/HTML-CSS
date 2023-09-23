@@ -1,0 +1,353 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background: radial-gradient(circle, #0E273C, #000000);
+}
+.ojos{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 90vh;
+}
+
+@keyframes showSharingan{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes spinSharingan{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(1080deg);
+    }
+}
+@keyframes shineSharingan{
+    0%{
+        background-color: #AA0404;
+    }
+    50%{
+        background-color: #AA0404;
+        box-shadow: 0px 0px 6px 6px #E41414;
+    }
+    100%{
+        background-color: #AA0404;
+        box-shadow: none;
+    }
+}
+
+.sharingan{
+    background-color: #AA0404;
+    height: 10em;
+    width: 10em;
+    position: relative;
+    border: 5px solid #000000 ;
+    animation:
+        showSharingan 4s ease-in-out,
+        spinSharingan 4s ease-in-out reverse,
+        shineSharingan 4s ease-in-out;
+}
+
+.sharingan .inner-ring{
+    height: 5em;
+    width: 5em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: 
+        translate(-50%, -50%);
+    border: 5px solid rgba(110, 13, 13, 0.5);
+}
+
+.sharingan .tomoe::before{
+    content: "";
+    height: 1em;
+    width: 2em;
+    position: absolute;
+    top: -0.5em;
+    box-sizing: border-box;
+    border-left: 16px solid #000000;
+    border-radius: 100% 0 0 0;
+}
+
+.sharingan .inner-ring .tomoe:nth-child(1){
+    top: -0.5em;
+    left: 40%;
+    transform: 
+        rotate(25deg);
+}
+.sharingan .inner-ring .tomoe:nth-child(2){
+    bottom: 0.75em;
+    left: -0.20em;
+    transform: 
+        rotate(-95deg);
+}
+.sharingan .inner-ring .tomoe:nth-child(3){
+    bottom: 0.75em;
+    right: -0.20em;
+    transform: 
+        rotate(145deg);
+}
+@keyframes showMangekyou{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes spinMangekyou{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(1080deg);
+    }
+}
+@keyframes shineMangekyou{
+    0%{
+        background-color: #AA0404;
+    }
+    50%{
+        background-color: #AA0404;
+        box-shadow: 0px 0px 6px 6px #E41414;
+    }
+    100%{
+        background-color: #AA0404;
+        box-shadow: none;
+    }
+}
+
+.mangekyou{
+    background-color: #050505;
+    height: 10em;
+    width: 10em;
+    position: relative;
+    border: 5px solid #000000 ;
+    animation:
+        showMangekyou 4s ease-in-out,
+        spinMangekyou 4s ease-in-out;
+}
+
+.mangekyou .tomoe{
+    background-color: #AA0404;
+    height: 5.5em;
+    width: 5.5em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.mangekyou .tomoe:nth-child(1){
+    border-radius: 0% 100% 0% 100% / 0% 100% 0% 100%;
+    transform: 
+        translate(-50%, -50%)
+        rotate(-15deg);
+    border: 4px solid black;
+}
+.mangekyou .tomoe:nth-child(2){
+    border-radius: 0% 100% 0% 100% / 0% 100% 0% 100%;
+    transform: 
+        translate(-50%, -50%)
+        rotate(-75deg);
+    border: 4px solid black;
+}
+.mangekyou .tomoe:nth-child(3){
+    border-radius: 0% 100% 0% 100% / 0% 100% 0% 100%;
+    transform: 
+        translate(-50%, -50%)
+        rotate(-135deg);
+    border: 4px solid black;
+}
+
+.mangekyou .tomoe:nth-child(3)::before,
+.mangekyou .tomoe:nth-child(3)::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: inherit;
+    border-radius: inherit;
+}
+
+.mangekyou .tomoe:nth-child(3)::before{
+    transform:
+        translate(-50%, -50%)
+        rotate(-60.5deg);
+}
+.mangekyou .tomoe:nth-child(3)::after{
+    transform:
+        translate(-50%, -50%)
+        rotate(-120.5deg);
+}
+
+@keyframes showRinnegan{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes spinRinnegan{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(1080deg);
+    }
+}
+@keyframes shineRinnegan{
+    0%{
+        background-color: #8A71BC;
+    }
+    50%{
+        background-color: #8A71BC;
+        box-shadow: 0px 0px 6px 6px #AC5CFA
+    }
+    100%{
+        background-color: #8A71BC;
+        box-shadow: none;
+    }
+}
+
+.rinnegan{
+    background-color: #8A71BC;
+    height: 10em;
+    width: 10em;
+    position: relative;
+    border: 5px solid #000000;
+    animation:
+        showRinnegan 4s ease-in-out,
+        spinRinnegan 4s ease-in-out reverse,
+        shineRinnegan 4s ease-in-out;
+}
+
+.rinnegan .inner-ring{
+    height: 8em;
+    width: 8em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:
+        translate(-50%, -50%);
+    border: 5px solid #000000; 
+}
+
+.rinnegan .inner-ring .inner-ring{
+    height: 6em;
+    width: 6em;
+}
+
+.rinnegan .inner-ring .inner-ring .inner-ring{
+    height: 4em;
+    width: 4em;
+}
+
+.rinnegan .inner-ring .inner-ring .tomoe::before{
+    content: "";
+    height: 0.9em;
+    width: 1.5em;
+    position: absolute;
+    top: -0.5em;
+    box-sizing: border-box;
+    border-left: 16px solid #000000;
+    border-radius: 100% 0 0 0;
+}
+
+.rinnegan .inner-ring .inner-ring .tomoe:nth-child(1){
+    top: 1em;
+    transform: 
+        rotate(-40deg);
+}
+.rinnegan .inner-ring .inner-ring .tomoe:nth-child(2){
+    top: 1.5em;
+    right: -0.25em;
+    transform: 
+        rotate(90deg);
+}
+.rinnegan .inner-ring .inner-ring .tomoe:nth-child(3){
+    bottom: -0.5em;
+    right: 2.5em;
+    transform: 
+        rotate(200deg);
+}
+
+.rinnegan .inner-ring .inner-ring .inner-ring .tomoe:nth-child(1){
+    top: -0.4em;
+    right: 1.4em;
+    transform: 
+        rotate(20deg);
+}
+.rinnegan .inner-ring .inner-ring .inner-ring .tomoe:nth-child(2){
+    top: 2.5em;
+    right: 3.2em;
+    transform: 
+        rotate(-90deg);
+}
+.rinnegan .inner-ring .inner-ring .inner-ring .tomoe:nth-child(3){
+    bottom: 0.5em;
+    right: -0.3em;
+    transform: 
+        rotate(155deg);
+}
+
+.sharingan,
+.mangekyou,
+.rinnegan,
+.inner-ring,
+.tomoe,
+.circle{
+    border-radius: 50%;
+}
+
+.tomoe, .circle{
+    background-color: #000000;
+    position: absolute;
+    height: 1em;
+    width: 1em;
+    z-index: 1;
+}
+
+.circle{
+    top: 50%;
+    left: 50%;
+    transform: 
+        translate(-50%, -50%);
+}
+
+.sharingan:hover{
+        animation:
+        spinSharingan 4s linear reverse infinite,
+        shineSharingan 4s linear infinite;
+}
+.mangekyou:hover{
+    animation: 
+        spinMangekyou 4s linear infinite;
+}
+.rinnegan:hover{
+    animation:
+        spinRinnegan 4s linear reverse infinite,
+        shineRinnegan 4s linear infinite;
+}
+
+.audio{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly
+}
+audio{
+    opacity: 0.05;
+    transition: opacity 0.5s linear;
+}
+audio:hover{
+    opacity: 0.5;
+}

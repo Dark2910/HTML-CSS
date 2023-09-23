@@ -1,0 +1,24 @@
+
+:root{
+    --background-color-sm: #40798C;
+    --background-color-md: #CFD7C7;
+    --background-color-lg: #F6F1D1;
+    --background-color-xl: #DBBADD;
+    --background-color-xxl: #A8C69F;
+}
+
+.col-sm{
+    background-color: var(--background-color-sm);
+}
+.col-md{
+    background-color: var(--background-color-md);
+}
+.col-lg{
+    background-color: var(--background-color-lg);
+}
+.col-xl{
+    background-color: var(--background-color-xl);
+}
+.col-xxl{
+    background-color: var(--background-color-xxl);
+}

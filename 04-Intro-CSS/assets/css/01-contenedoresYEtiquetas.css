@@ -1,0 +1,57 @@
+/* Selector universal ('*').
+Significa que el estilo se aplicará a todos los elementos de la página web. 
+*/
+*{
+    color: blueviolet;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: bold;
+}
+/*Utilizar el selector universal seguido de un identificador de clase, quiere decir que se aplicara a todas las
+etiquetas que posean ese identificador sin importar su tipo, ya sea div, p, h1, h2, etc. No importa, se aplica en todas.
+*/
+*.warning{
+    color: rgba(224, 17, 95, 0.3);
+    font-weight: bolder;
+}
+/*Referencia por etiqueta*/
+header{
+    background-color: greenyellow;
+}
+nav{
+    background-color: aqua;
+}
+main{
+    background-color: bisque;
+}
+footer{
+    background-color: violet;
+}
+p{
+    color: grey; /*Color por nombre*/
+}
+/*Referencia por id*/
+#id{
+    color: #2a9d8f; /*Color hexadecimal*/
+}
+/*Referencia por clase*/
+.clase{
+    color: rgb(128, 128, 0); /*Color rgb*/
+}
+.unknow{
+    color: rgba(93, 63, 211, 0.3); /*Color rgba*/
+}
+
+.background{
+    width: auto;
+    height: 750px;
+    background-image: url(../img/wolf.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.background-titulo{
+    color: white;
+}
